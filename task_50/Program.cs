@@ -8,10 +8,10 @@
 // 17 -> такого числа в массиве нет
 
 
-Console.Write("Введите номер строки массива от 1 до 4, интересующего элемента: ");
+Console.Write("Enter the row number of the array from 1 to 4 of the element of interest: ");
 int numberRow = int.Parse(Console.ReadLine()!);
 int row = 4;
-Console.Write("Введите номер столбца массива от 1 до 4, интересующего элемента: ");
+Console.Write("Enter the column number of the array from 1 to 4 of the element of interest: ");
 int numberColumn = int.Parse(Console.ReadLine()!);
 int BuferI = int.MinValue;
 int BuferJ = int.MinValue;
@@ -31,9 +31,9 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 }
 if (BuferI == int.MinValue || BuferJ == int.MinValue)
 {
-    Console.WriteLine($"Элемент с индексами({numberRow}, {numberColumn}) не найден.");
+    Console.WriteLine($"Element with indexes({numberRow}, {numberColumn}) not found.");
 }
 else
 {
-    Console.WriteLine($"Элемент с индексами({numberRow}, {numberColumn}) равен {matrix[BuferI, BuferJ]}");
+    Console.WriteLine($"An element with indexes ({numberRow}, {numberColumn}) is equal to {matrix[BuferI, BuferJ]}");
 }

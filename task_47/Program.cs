@@ -5,9 +5,9 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-Console.Write("Введите количество строк массива: ");
+Console.Write("enter the number of rows: ");
 int rows = int.Parse(Console.ReadLine()!);
-Console.Write("Введите количество столбцов массива: ");
+Console.Write("enter the number of columns: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 double [,] matrix = new double[rows,columns];
 Console.WriteLine("matrix:");
