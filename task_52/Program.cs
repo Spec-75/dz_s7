@@ -22,7 +22,6 @@ for (int i = 0; i < rows; i++)
     }
     Console.WriteLine();
 }
-
 for (int i = 0; i < columns; i++)
 {
     for (int j = 0; j < rows; j++)
